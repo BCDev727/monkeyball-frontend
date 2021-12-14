@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MonkeyBall | Private Community Sale</title>
+        <link href="img/cropped-favicon-32x32.png" rel="shortcut icon" type="image/x-icon">
+        <meta property="image" content="img/meta.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="css/font.css" media="all">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <div id="backgrad_grad">
+        <div class="backgrad_grad__style"></div>
+    </div>
+    <div class="backimg__style">
+        <div class="cont">
+            <img id="st" src="img/top-red.png">
+            <img id="nd" src="img/top-y.png">
+        </div>
+    </div>
+    <body>
+        <header class="header">
+            <a href="index.htm" class="header__logo">
+            <img src="img/logo.png">
+            </a>
+            <div class="progr-container">
+                <div class="obj3"></div>
+                <div class="obj">
+                    <div class="prgcont">
+                        <div class="up">
+                            <span>Progress</span>
+                            <span></span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-done" data-done="70"></div>
+                        </div>
+                        <div class="down">
+                            <span>Total Amount:</span>
+                            <span class="count">0</span>
+                            <span class="max">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="obj2"></div>
+            </div>
+        </header>
+        <section class="main">
+            <div class="main__half">
+                <h1 class="main__title">
+                    <span style="a">LET THE GAMES</span><br>
+                    <span>BEGIN</span>
+                </h1>
+                <div class="atrb"></div>
+            </div>
+            <div class="main__half">
+                <div class="inputBackground__style hidden">
+                    <div class="inputBackgroundimg__style"></div>
+                </div>
+                <div class="progress">
+                    <div data-progress-id="0" class="progress__stage progress__stage--trim-left progress__stage--checked">
+                        <div class="progress__stagemark progress__stagemark--marked"></div>
+                        Fill info
+                    </div>
+                    <div data-progress-id="1" class="progress__stage">
+                        <div class="progress__stagemark"></div>
+                        Select method
+                    </div>
+                    <div data-progress-id="2" class="progress__stage">
+                        <div class="progress__stagemark"></div>
+                        Enter amount
+                    </div>
+                    <div data-progress-id="3" class="progress__stage progress__stage--trim-right">
+                        <div class="progress__stagemark"></div>
+                        Buy MBS
+                    </div>
+                </div>
+                <div id="form-step1" class="form form--step1">
+                    <div class="form__row">
+                        <span class="form__input form__name">
+                        <input id="form-name" type="text" placeholder="Full Name">
+                        <span class="form__inputfocus"></span>
+                        </span>
+                        <span class="form__input form__email">
+                        <input id="form-email" type="text" placeholder="Email">
+                        <span class="form__inputfocus"></span>
+                        </span>
+                    </div>
+                    <div class="form__row">
+                        <span class="form__input form__contacts">
+                        <input type="text" placeholder="Any social networks (Telegram, Facebook, etc)">
+                        <span class="form__inputfocus"></span>
+                        </span>
+                    </div>
+                    <div class="form__row">
+                        <button id="form-step1-button" class="form__submit form__submit--next ">
+                        Next step
+                        </button>
+                    </div>
+                </div>
+                <div id="form-step2" class="form form--step2 form--hidden">
+                    <div class="form__row">
+                        <div id="method1" class="radio-button radio-button--ethereum">
+                            <img src="img/ethereum-icon.svg" alt="telegram">
+                            <span>Ethereum</span>
+                        </div>
+                        <div id="method2" class="radio-button radio-button--bitcoin radio-button--checked">
+                            <img src="img/bitcoin-icon.svg" alt="telegram">
+                            <span>Bitcoin</span>
+                        </div>
+                        <div id="method3" class="radio-button radio-button--tether">
+                            <img src="img/tether-icon.svg" alt="telegram">
+                            <span>Tether ERC-20</span>
+                        </div>
+                        <div id="method4" class="radio-button radio-button--tether">
+                            <img src="img/tether-icon.svg" alt="telegram">
+                            <span>Tether TRC-20</span>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <button data-back-button="0" class="form__back"></button>
+                        <button id="form-step2-button" class="form__submit form__submit--next form__submit--bitcoin">
+                        Next step
+                        </button>
+                    </div>
+                </div>
+                <div id="form-step3" class="form form--step3 form--hidden">
+                    <div class="form__row">
+                        <div class="exchange-input">
+                            <div class="exchange-input__label">Replenishment amount</div>
+                            <select class="exchange-input__select exchange-input__select--btc" name="crypto-in" id="exchange-select">
+                                <option value="btc" selected="">BTC</option>
+                                <option value="eth">ETH</option>
+                                <option value="usdt">USDT ERC-20</option>
+                                <option value="usdtt">USDT TRC-20</option>
+                            </select>
+                            <input id="exchange-in" type="number" min="0.1" max="100" step="0.1" placeholder="0.1">
+                            <span class="exchange-input__focus"></span>
+                        </div>
+                        <div class="exchange-input">
+                            <div class="exchange-input__label">You will receive</div>
+                            <div class="exchange-input__amount">MBS</div>
+                            <input id="exchange-out" type="number" min="0.1" max="100" step="0.1" placeholder="10000">
+                            <span class="exchange-input__focus"></span>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="course-buttons">
+                            <button data-id="course-button" class="course-buttons__item course-buttons__item--btc">0.105 BTC</button>
+                            <button data-id="course-button" class="course-buttons__item course-buttons__item--eth">1.5 ETH</button>
+                            <button data-id="course-button" class="course-buttons__item course-buttons__item--usdt">5000 USDT</button>
+                        </div>
+                        <div class="course-buttons">
+                            <button data-id="course-button" class="course-buttons__item">2500 MBS (min)</button>
+                            <button data-id="course-button" class="course-buttons__item">12500 MBS</button>
+                            <button data-id="course-button" class="course-buttons__item">25000 MBS</button>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <button data-back-button="1" class="form__back"></button>
+                        <button id="form-step3-button" class="form__submit form__submit--next">
+                        Buy MBS (Final step)
+                        </button>
+                    </div>
+                </div>
+                <div id="form-step4" class="form form--step4 form--hidden">
+                    <div class="final">
+                        <div class="final__form">
+                            <div class="form__row">
+                                <b>MBS Tokensale token address</b>
+                            </div>
+                            <div class="form__row">
+                                <span class="final__info">Send <span id="token-label">BTC</span> to the following address or QR:</span>
+                            </div>
+                            <div class="form__row">
+                                <span class="form__input final__address">
+                                <button id="address-copy" class="final__address-copy"></button>
+                                <input id="final-address" type="text" placeholder="Full Name" readonly="" value="bc1qaeklnuhmzf2hpad5lptgkhgl0fll3840yc25cx">
+                                <span class="form__inputfocus"></span>
+                                </span>
+                            </div>
+                            <div class="form__row">
+                                <div class="lds-ring">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <span class="final__info">Waiting for payment...</span>
+                            </div>
+                        </div>
+                        <div class="final__qr final__qr--btc">
+                            <img src="img/btc-qr.png" alt="Bitcoin Address">
+                        </div>
+                        <div class="final__qr final__qr--eth final__qr--hidden">
+                            <img src="img/eth-qr.png" alt="Ethereum Address">
+                        </div>
+                        <div class="final__qr final__qr--usdt final__qr--hidden">
+                            <img src="img/eth-qr.png" alt="Tether Address">
+                        </div>
+                        <div class="final__qr final__qr--usdtt final__qr--hidden">
+                            <img src="img/usdtt-qr.png" alt="Tether Address">
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <button data-back-button="2" id="form__back" class="form__back"></button>
+                        <button id="form-step4-button" class="form__submit">
+                        Check your payment
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="footer-style"></div>
+        <footer class="footer">
+            <a href="https://t.me/monkeyball_game" target="_blank" class="footer__link">
+            <img src="img/tg-icon.svg" alt="telegram">
+            <span>Join Our Community</span>
+            </a>
+            <div class="footer__copyright">
+                © 2021 All Rights Reserved MonkeyBall.
+            </div>
+        </footer>
+        <div class="cont">
+            <div class="group">
+                <div class="platform"></div>
+                <div class="monk2"></div>
+                <div class="monk"></div>
+                <div class="ball"></div>
+            </div>
+        </div>
+        <div class="modal" data-modal-close="">
+            <div class="modal__window" data-modal-window="">
+                <div class="modal__header1">Payment Checking</div>
+                <div class="modal__info">
+                    Funds are only received after 3 confirmations by the network.
+                    Don't worry if there are already confirmations and you don't
+                    have a letter in your mail with a link to receive MBS yet. This
+                    is due to a heavy load on the network. If you still do not
+                    receive a payment confirmation within 3 hours, contact
+                    <div><a href="/cdn-cgi/l/email-protection#e084859693a0848586898c818e84ce93888f90"><span class="__cf_email__" data-cfemail="7216170401321f1d1c19170b10131e1e5c01131e17">[email&#160;protected]</span></a></div>
+                </div>
+                <div class="modal__header2">Waiting for confirms</div>
+                <div class="modal__info">
+                    <div>You can track your transaction on:</div>
+                    <div><a href="https://www.blockchain.com/">blockchain.com</a></div>
+                    <div><a href="https://etherscan.io/">etherscan.io</a></div>
+                </div>
+                <div data-modal-close="" class="modal__close"></div>
+            </div>
+        </div>
+        <script data-cfasync="false" src="js/email-decode.min.js"></script>
+        <script src="js/p5.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
